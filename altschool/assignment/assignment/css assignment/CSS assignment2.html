@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Assignment2</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            /* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+body{
+    width: 1100px;
+    height: 120dvh;
+    background-color: aqua;
+    
+}
+main{
+    width: 100%;
+    height: 100%;
+}
+.grey{
+                background-color: #dbe1e1;
+                width: 1080px;
+                height: 62dvh;
+                
+            
+            }
+            .light-grey{
+                background: linear-gradient(#dedcdc 10%, #a6aaaa 70%);
+                flex-direction: column; 
+               
+                width: 1040px;
+                margin: auto;
+                height: 58dvh;
+                position: relative;
+                top: 1.35em;
+                
+            }
+            .white{
+                background: radial-gradient(#969393 5%, white 95%);
+                height: 56dvh;  
+                margin: 5px auto;
+                position: relative;
+                
+                
+            }
+/* the dividers should touch each end*/  
+
+.large{
+                background-color: #f3eeee;
+                width: 55%;
+                height: 55dvh;
+                margin-left: 10px;
+                position: relative;
+                top: 2em;
+                /*padding-left: 10px;
+                padding-top: 2em;
+                border-radius: 8px;
+                font-family: Georgia;
+                font-size: 17px;
+                text-align: justify;*/
+                
+                
+            }
+
+            .medium{
+                background-color: /*#f3eeee;*/ burlywood;
+                width: 35%;
+                text-transform: hidden;
+            
+                margin-left: 39em;
+
+                position: relative;
+                top: -28.7em;
+                padding-left: 10px;
+                padding-top: 2em;
+                border-radius: 8px;
+                font-family: Georgia;
+                font-size: 17px;
+                text-align: justify;
+                height: 50dvh;
+                overflow: hidden;
+            }
+            
+            .divider-large{
+                height: 3.3rem;
+                background-color: #636262;
+                position: relative;
+                margin-left: -10px;
+                
+            }
+            .divider-small{
+                height: 5px;
+                background-color: #b0adad;
+                margin-top: 1.5em;
+                position: relative;
+                
+            
+            }
+            .yellow-divider{
+                height: 4rem;
+                width: 20+em;
+                background-color: #f8b306;
+                color: black;
+                font-weight: bold;
+                text-align: center;
+                padding-top: 15px;
+                margin-left: -10px;
+                margin-right: auto;
+                margin-top: 2px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>
+                CONVERTING DESIGN TO HTML & CSS
+            </h1>
+            <img src="Huckleberry img.png" alt="Huckblerry image" width="300px"
+                height="200px">
+        </header>
+        <main>
+
+            <div class="grey">
+                <div class="light-grey">
+                    <div class="white">
+                        <div class="white-page large">
+                            <h2>Huckleberry</h2>
+                            <p>An avant-garde agency focused on connecting
+                                passion
+                                with logistics.</p>
+                            <p>A better way to solve the problems of
+                                tomorrow.</p>
+
+                            <div class="divider-large">
+                                <div class="divider-small"></div>
+
+                            </div>
+                            <div class="yellow-divider">
+                                <p>Wealth comes from operations</p>
+                            </div>
+                            <p>
+                                No modern business can thrive without developing
+                                a
+                                specialization in operations.Huckleberry has
+                                helped
+                                dozens of companies from Fortune 50 monolights
+                                to
+                                fast growing
+                                Bay Area startups.
+                                , achieve their goals and meet their KPI's by
+                                leaveraging our extensive network of logistics
+                                experts.</p>
+                            <br>
+                            <p> Huckleberry was established in 2003 to help
+                                ambitious business discover their true
+                                potential.
+                                If the resonates, let's chat!
+                            </p>
+                            <div class="divider-large">
+                                <div class="divider-small"></div>
+
+                            </div>
+                        </div>
+
+                        <div class="white-page medium">
+                            <h2>Huckleberry</h2>
+                            <p>An avant-garde agency focused on connecting
+                                passion
+                                with logistics.</p>
+                            <p>A better way to solve the problems of
+                                tomorrow.</p>
+
+                            <div class="divider-large">
+                                <div class="divider-small"></div>
+
+                            </div>
+                            <div class="yellow-divider">
+                                <p>Wealth comes from operations</p>
+                            </div>
+                            <p>
+                                No modern business can thrive without developing
+                                a
+                                specialization in operations.Huckleberry has
+                                helped
+                                dozens of companies from Fortune 50 monolights
+                                to
+                                fast growing
+                                Bay Area startups.
+                                , achieve their goals and meet their KPI's by
+                                leaveraging our extensive network of logistics
+                                experts.</p>
+                            <br>
+                            <p> Huckleberry was established in 2003 to help
+                                ambitious business discover their true
+                                potential.
+                                If the resonates, let's chat!
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+    </body>
+</html>
